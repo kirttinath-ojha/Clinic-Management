@@ -59,71 +59,21 @@ export function HeroSection() {
           
           <div className="lg:justify-self-end animate-fade-in hidden lg:block" style={{ animationDelay: "1s" }}>
             <div className="relative">
-              <div className="glass-card rounded-2xl p-6 transform hover:translate-y-[-5px] transition-transform duration-300">
+              <div className="glass-card rounded-2xl p-4 transform hover:translate-y-[-5px] transition-transform duration-300">
                 <div className="w-full max-w-lg overflow-hidden rounded-lg">
-                  <AspectRatio ratio={16 / 9}>
+                 
                     <img 
-                      src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80" 
+                      src="https://images.unsplash.com/photo-1589279003513-467d320f47eb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                       alt="Healthcare professional using a laptop" 
                       className="object-cover w-full h-full rounded-lg"
                     />
-                  </AspectRatio>
-                </div>
-                <div className="mt-6 space-y-3">
-                  <div className="h-6 bg-secondary/50 dark:bg-secondary/30 rounded-md w-3/4"></div>
-                  <div className="h-4 bg-secondary/50 dark:bg-secondary/30 rounded-md w-full"></div>
-                  <div className="h-4 bg-secondary/50 dark:bg-secondary/30 rounded-md w-5/6"></div>
+                 
                 </div>
               </div>
               
               {/* Decorative elements */}
               <div className="absolute -bottom-6 -left-6 w-12 h-12 bg-primary/20 rounded-full blur-md animate-float"></div>
               <div className="absolute -top-6 -right-6 w-24 h-24 bg-primary/10 rounded-full blur-lg animate-float" style={{ animationDelay: "1s" }}></div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Additional Medical Images with Animations */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 lg:mt-20">
-          <div className="glass-card rounded-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 animate-slide-up" style={{ animationDelay: "0.3s" }}>
-            <AspectRatio ratio={4 / 3}>
-              <img 
-                src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80" 
-                alt="Modern medical equipment" 
-                className="object-cover w-full h-full"
-              />
-            </AspectRatio>
-            <div className="p-4">
-              <h3 className="font-medium text-foreground">Advanced Equipment</h3>
-              <p className="text-sm text-foreground/70">State-of-the-art technology for superior care</p>
-            </div>
-          </div>
-          
-          <div className="glass-card rounded-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 animate-slide-up" style={{ animationDelay: "0.5s" }}>
-            <AspectRatio ratio={4 / 3}>
-              <img 
-                src="https://images.unsplash.com/photo-1631815588090-d4bfec5b7e00?auto=format&fit=crop&q=80" 
-                alt="Doctor using digital tablet" 
-                className="object-cover w-full h-full"
-              />
-            </AspectRatio>
-            <div className="p-4">
-              <h3 className="font-medium text-foreground">Digital Healthcare</h3>
-              <p className="text-sm text-foreground/70">Streamlined workflows with digital solutions</p>
-            </div>
-          </div>
-          
-          <div className="glass-card rounded-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 animate-slide-up" style={{ animationDelay: "0.7s" }}>
-            <AspectRatio ratio={4 / 3}>
-              <img 
-                src="https://images.unsplash.com/photo-1583774198576-115956f561dc?auto=format&fit=crop&q=80" 
-                alt="Medical lab technician" 
-                className="object-cover w-full h-full"
-              />
-            </AspectRatio>
-            <div className="p-4">
-              <h3 className="font-medium text-foreground">Laboratory Services</h3>
-              <p className="text-sm text-foreground/70">Accurate diagnostics for informed decisions</p>
             </div>
           </div>
         </div>

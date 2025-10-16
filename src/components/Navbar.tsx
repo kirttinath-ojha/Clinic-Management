@@ -29,14 +29,14 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Hospital className="h-8 w-8 text-primary animate-pulse-gentle" />
-            <span className="font-semibold text-xl sm:text-2xl text-foreground">ClinicOnboard</span>
+            <span className="font-semibold text-xl sm:text-2xl text-foreground">Augastam</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#" className="text-foreground/80 hover:text-primary transition-colors">Home</a>
             <a href="#pricing" className="text-foreground/80 hover:text-primary transition-colors">Pricing</a>
             <a href="#" className="text-foreground/80 hover:text-primary transition-colors">Features</a>
-            <a href="#" className="text-foreground/80 hover:text-primary transition-colors">Contact</a>
+            <a href="https://squbix.gitbook.io/augastam-clinics/" className="text-foreground/80 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">Documents</a>
           </nav>
           
           <div className="flex items-center space-x-4">

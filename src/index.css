@@ -1,0 +1,100 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 140 30% 99%;
+    --foreground: 220 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 15%;
+
+    --primary: 142 70% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 140 25% 92%;
+    --secondary-foreground: 220 10% 15%;
+
+    --muted: 140 10% 90%;
+    --muted-foreground: 220 10% 40%;
+
+    --accent: 140 50% 94%;
+    --accent-foreground: 220 10% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 140 5% 85%;
+    --input: 140 5% 85%;
+    --ring: 142 70% 45%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 220 40% 10%;
+    --foreground: 140 10% 95%;
+
+    --card: 220 35% 11%;
+    --card-foreground: 140 10% 95%;
+
+    --popover: 220 35% 11%;
+    --popover-foreground: 140 10% 95%;
+
+    --primary: 142 70% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 35% 15%;
+    --secondary-foreground: 140 10% 95%;
+
+    --muted: 220 35% 15%;
+    --muted-foreground: 140 10% 70%;
+
+    --accent: 220 35% 15%;
+    --accent-foreground: 140 10% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 140 10% 95%;
+
+    --border: 220 35% 20%;
+    --input: 220 35% 20%;
+    --ring: 142 70% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/80 dark:bg-black/30 backdrop-blur-lg border border-white/20 dark:border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-gradient-to-br from-white/90 to-white/70 dark:from-black/60 dark:to-black/40 backdrop-blur-lg border border-white/30 dark:border-white/10 shadow-sm;
+  }
+
+  .glass-input {
+    @apply bg-white/50 dark:bg-black/20 backdrop-blur-md border border-white/30 dark:border-white/10;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
